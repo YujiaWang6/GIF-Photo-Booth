@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+html {
+    font-size: 1em;
+    font-family: 'Irish Grover', cursive;
+
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    padding:1em 0;
+}
+
+/*--Machine Outlook--*/
+#machine {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#outlook-top {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.edge {
+    width:600px;
+    height:35px;
+    background-color: #D14D72;
+    border-radius: 10px;
+}
+
+#top {
+    width: 504px;
+    height:80px;
+    background-color: #FCC8D1;
+    font-size: 3em;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#window {
+    width:350px;
+    height:350px;
+    border: 50px solid #dfd5d5;
+    position:relative;
+}
+
+#outlook-bottom{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#fill {
+    display: flex;
+    justify-content: center;
+}
+
+.color1-fill {
+    width:72px;
+    height:250px;
+    background-color: #FEF2F4;
+}
+.color2-fill {
+    width:72px;
+    height:250px;
+    background-color: #FFABAB;
+}
+
+#trapezoid {
+    border-bottom: 70px solid #D14D72;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    height: 0;
+    width: 450px;
+    border-radius: 160px;
+    position:relative;
+  }
+
+  #ball {
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background-color: rgb(6, 204, 204);
+    position:absolute;
+    top:-65px;
+    left:40px;
+
+  }
+  #stick {
+    width:20px;
+    height:70px;
+    background-color: rgb(255, 255, 219);
+    position:absolute;
+    top:-25px;
+    left:50px;
+  }
+
+/*--Dog outlook--*/
+#dog{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+   
+
+}
+
+
+#head {
+    width: 180px;
+    height: 160px;
+    border-radius: 100% / 70% 80% 114% 120%;
+    border:5px solid black;
+    border-bottom: 0.5vmin solid #0000;
+    position:relative;
+    background: 
+        radial-gradient(circle at 24% 29%, rgb(55, 36, 9) 12%, #0000 0),
+        radial-gradient(circle at 76% 29%, rgb(55, 36, 9) 12%, #0000 0),
+        radial-gradient(circle at 27% 23%, rgb(188, 131, 31) 10%, #0000 0),
+        radial-gradient(circle at 73% 23%, rgb(188, 131, 31) 10%, #0000 0),
+        radial-gradient(65% 100% at 50% 75%, rgb(255, 255, 255) 35%, #0000 0),
+        radial-gradient(110% 130% at 100% 20%, rgb(55, 36, 9) 40%, #0000 0),
+        radial-gradient(110% 130% at 0% 20%,rgb(55, 36, 9) 40%, #0000 0),
+        radial-gradient(90% 60% at 100% 80%,rgb(188, 131, 31) 50%, #0000 0 ),
+        radial-gradient(90% 60% at 0% 80%,rgb(188, 131, 31) 50%, #0000 0 ),
+        radial-gradient(circle at 0% 0%, white 100%, #0000 0);
+}
+
+#nose {
+    width: 40px;
+    height: 25px;
+    background-color: black;
+    border-radius: 70% / 30% 30% 120% 100%;
+    top:60%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    position:absolute;
+    
+}
+
+.eyes {
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    box-shadow: 0 -0.25vmin 0 0.25vmin, 0 0.25vmin 0 0.25vmin;
+    background:
+        radial-gradient(circle at 45% 25%, white 7%, #0000 0),
+        radial-gradient(circle at 30% 40%, white 15%, #0000 0),
+        radial-gradient(circle at 50% 50%, black 50%, #0000 0),
+        radial-gradient(circle at 50% 50%, rgb(91, 205, 211) 80%, white 40%);
+}
+#left-eye {
+    position:absolute;
+    left:25%;
+    top:35%;
+    transform: translate(-50%,-50%);
+}
+#right-eye {
+    position:absolute;
+    left:75%;
+    top:35%;
+    transform: translate(-50%,-50%);
+}
+
+.mouth {
+    width: 35px;
+    height: 20px;
+    border: 0.75vmin solid;
+    border-radius: 100% / 80% 50% 80% 130%;
+    border-top-color: #ffffff;
+}
+#left-mouth {
+    top:66%;
+    left:26%;
+
+    position:absolute;
+}
+#right-mouth {
+    transform: scaleX(-1);
+    top:66%;
+    left:48%;
+    
+    position:absolute;
+}
+
+
+/*
+#left-ear{
+    position: absolute;
+    top:-45%;
+    left:-19%;
+}
+
+.ear {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid rgb(55, 36, 9);
+    transform: rotate(-25deg);
+    top:1900px;
+    left:-20px;
+
+  }
+  #right-ear {
+    position: absolute;
+    top:-45%;
+    left:71%;
+    transform: scaleX(-1) rotate(-34deg);
+  }
+*/
+
+.ear {
+    width: 40px;
+    height: 30px;
+    border-radius: 120% 50%;
+}
