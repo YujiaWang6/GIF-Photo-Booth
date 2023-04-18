@@ -187,7 +187,7 @@ h1 {
 }
 #coverleft {
     position:absolute;
-    left:32%;
+    left:31%;
     top:73%;
 }
 #coverright {
@@ -539,6 +539,7 @@ animation: blinking2 2s infinite;
     width:350px;
     height:350px;
     background-color: beige;
+    display: none;
 }
 #theme2container {
     position: relative;
@@ -628,3 +629,174 @@ animation: blinking2 2s infinite;
         background-color: #a9f5f5;
     }
 }
+
+/*--Theme 3: triangles color change--*/
+#theme3-trianglecolorchange {
+    width:350px;
+    height:350px;
+    background-color: white;
+    display: none;
+}
+#theme2container {
+    position: relative;
+    width:350px;
+    height:350px;
+}
+
+.triangle {
+    width:0;
+    height:0;
+    border-top: 175px solid rgb(0, 0, 0);
+    border-right: 175px solid transparent;
+}
+#triangle1 {
+    position:absolute;
+    left:0%;
+    top:0%;
+    border-top-color: #BFCCB5;
+    animation: trianglecolorchange 5s infinite;
+    
+}
+#triangle2 {
+    position:absolute;
+    left:0%;
+    top:50%;
+    border-top-color: #BFCCB5;
+    animation: trianglecolorchange 4s reverse infinite;
+    
+}
+#triangle3 {
+    position:absolute;
+    left:50%;
+    top:0%;
+    border-top-color: #BFCCB5;
+    animation: trianglecolorchange 6s infinite;
+    
+}
+#triangle4 {
+    position:absolute;
+    left:50%;
+    top:50%;
+    border-top-color: #BFCCB5;
+    animation: trianglecolorchange 5s alternate infinite;
+    
+}
+
+#triangle5 {
+    position:absolute;
+    left:0%;
+    top:0%;
+    border-top-color: #7C96AB;
+    transform: rotate(180deg);
+    animation: trianglecolorchange 7s infinite;
+}
+#triangle6 {
+    position:absolute;
+    left:0%;
+    top:50%;
+    border-top-color: #7C96AB;
+    transform: rotate(180deg);
+    animation: trianglecolorchange 4s alternate infinite;
+}
+#triangle7 {
+    position:absolute;
+    left:50%;
+    top:0%;
+    border-top-color: #7C96AB;
+    transform: rotate(180deg);
+    animation: trianglecolorchange 5s reverse infinite;
+}
+#triangle8 {
+    position:absolute;
+    left:50%;
+    top:50%;
+    border-top-color: #7C96AB;
+    transform: rotate(180deg);
+    animation: trianglecolorchange 7s reverse infinite;
+}
+
+@keyframes trianglecolorchange {
+    0% {
+        border-top-color: #7C96AB;
+    }
+    10% {
+        border-top-color: #B7B7B7;
+    }
+    20% {
+        border-top-color: #EDC6B1;
+    }
+    30% {
+        border-top-color: #BFCCB5;
+    }
+    40% {
+        border-top-color: #A9907E;
+    }
+    50% {
+        border-top-color: #F3DEBA;
+    }
+    60% {
+        border-top-color: #D5B4B4;
+    }
+    70% {
+        border-top-color: #E4D0D0;
+    }
+    80% {
+        border-top-color: #FFACAC;
+    }
+    90% {
+        border-top-color: #FBFFB1;
+    }
+    100% {
+        border-top-color: #ECF2FF;
+    }
+}
+
+/*--Theme 4: dropping heart--*/
+#theme4-droppingheart{
+    width:350px;
+    height:350px;
+    background-color: #B7B7B7;
+    display: none;
+}
+#theme4container{
+    width:350px;
+    height:350px;
+    position:relative;
+}
+#heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+  }
+  #heart:before,
+  #heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: rgb(255, 120, 120);
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+  }
+  #heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+  }
+  #heartcontainer{
+    position:absolute;
+    left:10px;
+    top:50px;
+  }
+  #string {
+    width:10px;
+    height:90px;
+    background-color: rgb(46, 18, 60);
+    position:absolute;
+    top:0;
+    left:55px
+
+  }
