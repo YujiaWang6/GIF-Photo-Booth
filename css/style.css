@@ -45,7 +45,8 @@ h1 {
     width:350px;
     height:350px;
     border: 50px solid #dfd5d5;
-    position:relative;
+    position: relative;
+    
 }
 
 #outlook-bottom{
@@ -105,17 +106,14 @@ h1 {
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
-   
-
 }
-
 
 #head {
     width: 180px;
     height: 160px;
     border-radius: 100% / 70% 80% 114% 120%;
     border:5px solid black;
-    border-bottom: 0.5vmin solid #0000;
+    border-bottom: 0.1vmin solid #0000;
     position:relative;
     background: 
         radial-gradient(circle at 24% 29%, rgb(55, 36, 9) 12%, #0000 0),
@@ -169,7 +167,7 @@ h1 {
 .mouth {
     width: 35px;
     height: 20px;
-    border: 0.75vmin solid;
+    border: 0.5vmin solid;
     border-radius: 100% / 80% 50% 80% 130%;
     border-top-color: #ffffff;
 }
@@ -188,13 +186,6 @@ h1 {
 }
 
 
-/*
-#left-ear{
-    position: absolute;
-    top:-45%;
-    left:-19%;
-}
-
 .ear {
     width: 0;
     height: 0;
@@ -202,20 +193,217 @@ h1 {
     border-right: 50px solid transparent;
     border-bottom: 100px solid rgb(55, 36, 9);
     transform: rotate(-25deg);
-    top:1900px;
-    left:-20px;
-
   }
+
+  #left-ear{
+    position: absolute;
+    top:-45%;
+    left:-17%;
+}
+
   #right-ear {
     position: absolute;
     top:-45%;
     left:71%;
     transform: scaleX(-1) rotate(-34deg);
   }
-*/
-
-.ear {
-    width: 40px;
-    height: 30px;
-    border-radius: 120% 50%;
+.container {
+    position:relative;
 }
+.earinside {
+    width:0;
+    height:0;
+    border-left: 20px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 50px solid rgb(255, 177, 214);
+    top:45px;
+    left:-20px;
+    position:absolute;
+}
+#body {
+    position:absolute;
+    width:200px;
+    height:100px;
+    background-color: red;
+    border-radius: 100% / 220% 220% 0% 0%;
+    border: 5px solid black;
+    border-top: 0.005vmin solid #0000;
+    top:91%;
+    left:50%;
+    transform: translate(-50%,0);
+    background: 
+    radial-gradient(60% 210% at 50% 0%, white 50%, #0000 0),
+    radial-gradient(circle at 0% 0%,rgb(55, 36, 9) 100%, #0000 0);
+}
+
+
+/*--background--*/
+
+
+
+@keyframes blinking {
+    0% {
+      border-right: 50px solid transparent;
+      border-bottom: 35px solid rgb(249, 249, 98);
+      border-left: 50px solid transparent;
+      transform:rotate(35deg) scale(1);
+
+    }
+    70% {
+
+      border-right: 50px solid transparent;
+      border-bottom: 35px solid rgb(254, 254, 198);
+      border-left: 50px solid transparent;
+      transform:rotate(35deg) scale(1.2);
+
+
+    }
+    100% {
+      border-right: 50px solid transparent;
+      border-bottom: 35px solid rgb(249, 249, 98);
+      border-left: 50px solid transparent;
+      transform:rotate(35deg) scale(1);
+
+    }
+  }
+
+  @keyframes blinking1 {
+    0% {
+      border-right: 15px solid transparent;
+      border-bottom: 40px solid rgb(249, 249, 98);
+      border-left: 15px solid transparent;
+      transform:rotate(-35deg) scale(1);
+
+    }
+    70% {
+
+      border-right: 15px solid transparent;
+      border-bottom: 40px solid rgb(254, 254, 198);
+      border-left: 15px solid transparent;
+      transform:rotate(-35deg) scale(1);
+
+
+    }
+    100% {
+      border-right: 15px solid transparent;
+      border-bottom: 40px solid rgb(249, 249, 98);
+      border-left: 15px solid transparent;
+      transform:rotate(-35deg) scale(1);
+
+    }
+
+  }
+
+
+  @keyframes blinking2 {
+    0% {
+      border-right: 50px solid transparent;
+      border-bottom: 35px solid rgb(249, 249, 98);
+      border-left: 50px solid transparent;
+      transform:rotate(-70deg) scale(1);
+
+    }
+    70% {
+
+      border-right: 50px solid transparent;
+      border-bottom: 35px solid rgb(254, 254, 198);
+      border-left: 50px solid transparent;
+      transform:rotate(-70deg) scale(1);
+
+
+    }
+    100% {
+      border-right: 50px solid transparent;
+      border-bottom: 35px solid rgb(249, 249, 98);
+      border-left: 50px solid transparent;
+      transform:rotate(-70deg) scale(1);
+
+    }
+
+
+  }
+
+
+.theme1 {
+    background-color: rgb(1, 1, 65);
+    position: relative;
+}
+  #starcontainer1{
+    position:absolute;
+    left:-60px;
+    top:-30px;
+    transform: rotate(85deg);
+}
+
+#starcontainer2{
+    position:absolute;
+    left:50px;
+    top:10px;
+    transform: rotate(55deg);
+}
+
+#starcontainer3{
+    position:absolute;
+    left:130px;
+    top:150px;
+    transform: rotate(25deg);
+}
+
+#starcontainer4{
+    position:absolute;
+    left:-90px;
+    top:210px;
+    transform: rotate(5deg);
+}
+
+
+.star {
+  margin: 0px 5px 60px 100px;
+  position: relative;
+  display: block;
+  color: yellow;
+  width: 0px;
+  height: 0px;
+  border-right: 50px solid transparent;
+  border-left: 50px solid transparent;
+  border-bottom: 35px solid yellow;
+  transform: rotate(35deg) scale(1);
+  animation: blinking 2s infinite;
+  transition: transform 2s;
+  
+}
+
+
+
+.star:before {
+border-bottom: 40px solid yellow;
+border-left: 15px solid transparent;
+border-right: 15px solid transparent;
+position: absolute;
+height: 0;
+width: 0;
+top: -22.5px;
+left: -32.5px;
+display: block;
+content: '';
+transform: rotate(-35deg) scale(1);
+animation: blinking1 2s infinite;
+
+
+}
+.star:after {
+position: absolute;
+display: block;
+color: yellow;
+top: 3px;
+left: -52.5px;
+width: 0px;
+height: 0px;
+border-right: 50px solid transparent;
+border-bottom: 35px solid yellow;
+border-left: 50px solid transparent;
+transform: rotate(-70deg) scale(1);
+content: '';
+animation: blinking2 2s infinite;
+}
+
