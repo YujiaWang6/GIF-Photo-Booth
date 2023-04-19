@@ -1051,3 +1051,20 @@ animation: blinking2 2s infinite;
         background-color: #FFD93D;
     }
 }
+
+#smallscreen {
+    width:450px;
+    height:100px;
+    background-color: #D14D72;
+    display: none;
+}
+/*--Media Queries--*/
+@media screen and (max-width:740px){
+    #outlook-bottom {
+        display: none;
+    }
+    #smallscreen {
+        display: block;
+    }
+
+}

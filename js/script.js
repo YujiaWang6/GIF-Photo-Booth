@@ -1,6 +1,7 @@
 window.onload=pageLoaded;
 function pageLoaded(){
     var switcherBar = document.getElementById("switcher");
+    var smallscreenswitcher = document.getElementById("smallscreen");
     var theme1 = document.getElementById("theme1-night-with-stars");
     var theme2 = document.getElementById("theme2-colourful-dots");
     var theme3 = document.getElementById("theme3-trianglecolorchange");
@@ -8,6 +9,7 @@ function pageLoaded(){
     var theme5 = document.getElementById("theme5-bone");
     var i = 0;
     switcherBar.onclick = changeTheme;
+    smallscreenswitcher.onclick=changeTheme;
     function changeTheme(){
         i=i+1;
         if(i>4){
