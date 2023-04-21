@@ -113,6 +113,21 @@ p {
     transform: translate(-50%,-50%);
     
 }
+#body {
+    position:absolute;
+    width:200px;
+    height:103px;
+    background-color: red;
+    border-radius: 100% / 220% 220% 0% 0%;
+    border: 4px solid black;
+    border-top: 0.005vmin solid #0000;
+    top:91%;
+    left:50%;
+    transform: translate(-50%,0);
+    background: 
+    radial-gradient(60% 210% at 50% 0%, white 50%, #0000 0),
+    radial-gradient(circle at 0% 0%,rgb(55, 36, 9) 100%, #0000 0);
+}
 
 #head {
     width: 180px;
@@ -177,7 +192,7 @@ p {
     border-bottom: 0.5vmin solid;
     background-color: #D14D72;
     border-radius: 0 0 10vmin 10vmin;
-    left:40%;
+    left:40.5%;
     top:78%;
     position: absolute;
     animation: tongue 4s infinite;
@@ -193,7 +208,7 @@ p {
 }
 #coverleft {
     position:absolute;
-    left:31%;
+    left:31.5%;
     top:72%;
 }
 #coverright {
@@ -211,7 +226,7 @@ p {
 }
 #left-mouth {
     top:66%;
-    left:26%;
+    left:27%;
 
     position:absolute;
 }
@@ -263,22 +278,6 @@ p {
     position:absolute;
 }
 
-
-#body {
-    position:absolute;
-    width:200px;
-    height:103px;
-    background-color: red;
-    border-radius: 100% / 220% 220% 0% 0%;
-    border: 4px solid black;
-    border-top: 0.005vmin solid #0000;
-    top:91%;
-    left:50%;
-    transform: translate(-50%,0);
-    background: 
-    radial-gradient(60% 210% at 50% 0%, white 50%, #0000 0),
-    radial-gradient(circle at 0% 0%,rgb(55, 36, 9) 100%, #0000 0);
-}
 
 
 /*--dog animation--*/
@@ -1068,3 +1067,23 @@ animation: blinking2 2s infinite;
     }
 
 }
+@media screen and (max-width:600px){
+    #outlook-top {
+        display: none;
+    }
+    #window {
+        border: 20px solid #dfd5d5;
+    }
+    #smallscreen {
+        width:390px;
+    }
+    #coverleft {
+        left:31%;  
+    }
+
+    
+}
+
+
+
+  
