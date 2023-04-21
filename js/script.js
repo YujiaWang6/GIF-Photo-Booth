@@ -10,6 +10,7 @@ function pageLoaded(){
     var i = 0;
     switcherBar.onclick = changeTheme;
     smallscreenswitcher.onclick=changeTheme;
+    document.addEventListener('keypress',changeTheme);
     function changeTheme(){
         i=i+1;
         if(i>4){
