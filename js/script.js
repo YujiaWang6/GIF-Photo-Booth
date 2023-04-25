@@ -9,9 +9,11 @@ function pageLoaded(){
     var theme5 = document.getElementById("theme5-bone");
     var i = 0;
     switcherBar.onclick = changeTheme;
+    
     smallscreenswitcher.onclick=changeTheme;
     document.addEventListener('keypress',changeTheme);
     function changeTheme(){
+
         i=i+1;
         if(i>4){
             i=0;
@@ -51,5 +53,16 @@ function pageLoaded(){
             theme4.style.display="none";
             theme5.style.display="block";
         }
+        console.log(switcherBar.style.animation);
+        switcherBar.style.animation = "switchermove 1s";
+
+        
     }
+    switcherBar.addEventListener("animationend", reset);
+    function reset(){
+        switcherBar.style.animation = "switchoriginalposition 0.1s";
+    }
+    
+    
+    
 }
