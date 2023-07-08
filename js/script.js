@@ -14,6 +14,7 @@ function pageLoaded(){
     var accessories = document.getElementById("button");
     var sunglasses = document.getElementById("sunglasses");
     var bowTie = document.getElementById("bow-tie");
+    var hat = document.getElementById("hat");
     /*--Functions--*/
     var i = 0;
     switcherBar.onclick = changeTheme;
@@ -77,20 +78,28 @@ function pageLoaded(){
     accessories.onclick = changeAccessories;
     function changeAccessories(){
         j=j+1;
-        if(j>2){
+        if(j>3){
             j=0;
         }
         if(j===0){
             sunglasses.style.display = "none";
             bowTie.style.display = "none";
+            hat.style.display = "none";
         }
         if(j===1){
             sunglasses.style.display = "block";
             bowTie.style.display = "none";
+            hat.style.display = "none";
         }
         if(j===2){
             sunglasses.style.display = "none";
             bowTie.style.display = "block";
+            hat.style.display = "none";
+        }
+        if(j===3){
+            sunglasses.style.display = "none";
+            bowTie.style.display = "none";
+            hat.style.display = "block";
         }
     }
     
