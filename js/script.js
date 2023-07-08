@@ -1,5 +1,7 @@
 window.onload=pageLoaded;
 function pageLoaded(){
+    /*--Get elements--*/
+    //Background change
     var switcherBar = document.getElementById("switcher");
     var smallscreenswitcher = document.getElementById("smallscreen");
     var theme1 = document.getElementById("theme1-night-with-stars");
@@ -7,9 +9,14 @@ function pageLoaded(){
     var theme3 = document.getElementById("theme3-trianglecolorchange");
     var theme4 = document.getElementById("theme4-droppingheart");
     var theme5 = document.getElementById("theme5-bone");
+
+    //Accessories change
+    var accessories = document.getElementById("button");
+    var sunglasses = document.getElementById("sunglasses");
+    var bowTie = document.getElementById("bow-tie");
+    /*--Functions--*/
     var i = 0;
     switcherBar.onclick = changeTheme;
-    
     smallscreenswitcher.onclick=changeTheme;
     document.addEventListener('keypress',changeTheme);
     function changeTheme(){
@@ -58,11 +65,34 @@ function pageLoaded(){
 
         
     }
+
     switcherBar.addEventListener("animationend", reset);
     function reset(){
         switcherBar.style.animation = "switchoriginalposition 0.1s";
     }
-    
+
+
+
+    var j = 0;
+    accessories.onclick = changeAccessories;
+    function changeAccessories(){
+        j=j+1;
+        if(j>2){
+            j=0;
+        }
+        if(j===0){
+            sunglasses.style.display = "none";
+            bowTie.style.display = "none";
+        }
+        if(j===1){
+            sunglasses.style.display = "block";
+            bowTie.style.display = "none";
+        }
+        if(j===2){
+            sunglasses.style.display = "none";
+            bowTie.style.display = "block";
+        }
+    }
     
     
 }

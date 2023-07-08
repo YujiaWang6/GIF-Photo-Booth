@@ -83,8 +83,17 @@ p {
     border-radius: 160px;
     position:relative;
   }
-
-  #ball {
+/*--Switcher - change background--*/
+  #switcher {
+    width:40px;
+    height:110px;
+    position:relative;
+    transform-origin: right 60%;
+    top:-30px;
+    left:30px;
+    
+  }
+  #switcher-ball {
     width:40px;
     height:40px;
     border-radius:50%;
@@ -96,7 +105,7 @@ p {
     top:-40px;
 
   }
-  #stick {
+  #switcher-stick {
     width:20px;
     height:70px;
     background-color: rgb(255, 255, 219);
@@ -109,15 +118,6 @@ p {
 
   }
 
-  #switcher {
-    width:40px;
-    height:110px;
-    position:relative;
-    transform-origin: right 60%;
-    top:-30px;
-    left:30px;
-    
-  }
 
   @keyframes switchermove {
     0% {
@@ -139,6 +139,20 @@ p {
         transform: rotate(0);
     }
   }
+
+/*--Change Accessories - button--*/
+#changeAccessories{
+    position:relative;
+    top:-100px;
+    left:330px;
+}
+#button{
+    width: 50px;
+    height: 30px;
+    border-radius: 25px / 15px;
+    position:absolute;
+    background-color: #a8f5bb;
+}
 
 /*--Dog outlook--*/
 /*reference: https://www.google.com/search?q=css+drawing+dog&source=lmns&bih=934&biw=833&rlz=1C5CHFA_enCA982CA983&hl=zh-CN&sa=X&ved=2ahUKEwjb84P9i6j-AhUTBVkFHcYXDPsQ_AUoAHoECAEQAA#fpstate=ive&vld=cid:8148f4b4,vid:Pem9sRC4VrM */
@@ -274,7 +288,6 @@ p {
     position:absolute;
 }
 
-
 .ear {
     width: 0;
     height: 0;
@@ -314,6 +327,132 @@ p {
     position:absolute;
 }
 
+
+/*--Accessories - sunglasses*/
+#sunglasses{
+    display: none;
+}
+.glass-frame{
+    width:55px;
+    height:48px;
+    border-radius: 100% / 70% 80% 114% 120%;
+    border-width:20px;
+    background-color: green;
+}
+#glass-bridge{
+    width:40px;
+    height:7px;
+    background-color: green;
+    position:absolute;
+    left:40%;
+    top:30%;
+}
+#left-glass-frame{
+    position:absolute;
+    left:10%;
+    top:21%;
+}
+#right-glass-frame{
+    position:absolute;
+    left:59.5%;
+    top:21%;
+}
+#left-glass-leg{
+    width:25px;
+    height:7px;
+    transform: rotate(30deg) skew(20deg);
+    background-color: green;
+    position:absolute;
+    left:-1%;
+    top:23%;
+}
+#right-glass-leg{
+    width:25px;
+    height:7px;
+    transform: rotate(-30deg) skew(20deg);
+    background-color: green;
+    position:absolute;
+    left:86%;
+    top:23%;
+}
+
+.glasses{
+    width:45px;
+    height:39px;
+    border-radius: 100% / 70% 80% 114% 120%;
+    border-width:20px;
+    background-color: black;
+}
+#left-glass{
+    position:absolute;
+    left:13%;
+    top:24%;
+}
+#right-glass{
+    position:absolute;
+    left:62.5%;
+    top:24%
+}
+
+.glass-shadow1{
+    width:20px;
+    height:2px;
+    transform: rotate(-20deg);
+    background-color: white;
+}
+#left-shadow1{
+    position:absolute;
+    left:17%;
+    top:33%;
+}
+#right-shadow1{
+    position:absolute;
+    left:66.5%;
+    top:33%;
+}
+
+.glass-shadow2{
+    width:8px;
+    height:2px;
+    transform: rotate(-20deg);
+    background-color:white;
+}
+#left-shadow2{
+    position:absolute;
+    left:17%;
+    top:30%;
+}
+#right-shadow2{
+    position:absolute;
+    left:66.5%;
+    top:30%;
+}
+
+/*--Accessories - bow-tie*/
+#bow-tie{
+    position:relative;
+    display: none;
+}
+#left-bow-tie{
+    width:0;
+    height:0;
+    border-top: 20px solid transparent;
+    border-left: 40px solid red;
+    border-bottom: 20px solid transparent;
+    border-radius: 15px;
+    position:absolute;
+    left:33%;
+}
+#right-bow-tie{
+    width:0;
+    height:0;
+    border-top: 20px solid transparent;
+    border-right: 40px solid red;
+    border-bottom: 20px solid transparent;
+    border-radius: 15px;
+    position:absolute;
+    left:45%;
+}
 
 
 /*--dog animation--*/
