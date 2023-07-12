@@ -646,7 +646,6 @@ p {
   transform: rotate(35deg) scale(1);
   animation: blinking 2s infinite;
   transition: transform 2s;
-  
 }
 
 
@@ -1279,10 +1278,16 @@ animation: blinking2 2s infinite;
     }
 }
 
-#smallscreen {
+#smallscreen__switch {
     width:450px;
-    height:100px;
+    height:80px;
     background-color: #D14D72;
+    display: none;
+}
+#smallscreen__button{
+    width:450px;
+    height:80px;
+    background-color: #a8f5bb;
     display: none;
 }
 /*--Media Queries--*/
@@ -1290,7 +1295,10 @@ animation: blinking2 2s infinite;
     #outlook-bottom {
         display: none;
     }
-    #smallscreen {
+    #smallscreen__switch {
+        display: block;
+    }
+    #smallscreen__button{
         display: block;
     }
 
@@ -1302,7 +1310,10 @@ animation: blinking2 2s infinite;
     #window {
         border: 20px solid #dfd5d5;
     }
-    #smallscreen {
+    #smallscreen__switch {
+        width:390px;
+    }
+    #smallscreen__button{
         width:390px;
     }
     #coverleft {

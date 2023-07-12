@@ -3,7 +3,7 @@ function pageLoaded(){
     /*--Get elements--*/
     //Background change
     var switcherBar = document.getElementById("switcher");
-    var smallscreenswitcher = document.getElementById("smallscreen");
+    var smallscreenswitcher = document.getElementById("smallscreen__switch");
     var theme1 = document.getElementById("theme1-night-with-stars");
     var theme2 = document.getElementById("theme2-colourful-dots");
     var theme3 = document.getElementById("theme3-trianglecolorchange");
@@ -12,6 +12,7 @@ function pageLoaded(){
 
     //Accessories change
     var accessories = document.getElementById("button");
+    var smallscreenbutton = document.getElementById("smallscreen__button");
     var sunglasses = document.getElementById("sunglasses");
     var bowTie = document.getElementById("bow-tie");
     var hat = document.getElementById("hat");
@@ -76,6 +77,7 @@ function pageLoaded(){
 
     var j = 0;
     accessories.onclick = changeAccessories;
+    smallscreenbutton.onclick = changeAccessories;
     function changeAccessories(){
         j=j+1;
         if(j>3){
