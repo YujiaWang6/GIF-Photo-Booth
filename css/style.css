@@ -49,6 +49,7 @@ p {
     height:350px;
     border: 50px solid #dfd5d5;
     position: relative;
+    overflow: hidden;
     
 }
 
