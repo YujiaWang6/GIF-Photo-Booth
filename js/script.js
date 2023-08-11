@@ -3,6 +3,7 @@ function pageLoaded(){
     /*--Get elements--*/
     //Background change
     var switcherBar = document.getElementById("switcher");
+    var switchAccessories = document.getElementById("button");
     var smallscreenswitcher = document.getElementById("smallscreen__switch");
     var theme1 = document.getElementById("theme1-night-with-stars");
     var theme2 = document.getElementById("theme2-colourful-dots");
@@ -20,7 +21,8 @@ function pageLoaded(){
     var i = 0;
     switcherBar.onclick = changeTheme;
     smallscreenswitcher.onclick=changeTheme;
-    document.addEventListener('keypress',changeTheme);
+    switcherBar.addEventListener('keypress',changeTheme);
+    switchAccessories.addEventListener('keypress',changeAccessories);
     function changeTheme(){
 
         i=i+1;
